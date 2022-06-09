@@ -36,7 +36,7 @@ p {
 /*card Design*/
 main {
   background-color: hsl(244deg, 38%, 16%);
-  border-radius: 15px;
+  border-radius: 10px;
   border: 1px solid #c086e4;
   -webkit-box-shadow: 0 0 10px #2c295b;
           box-shadow: 0 0 10px #2c295b;
@@ -58,7 +58,7 @@ main p {
 
 @media screen and (min-width: 550px) {
   main {
-    max-height: 28rem;
+    max-height: 26rem;
     max-width: 76vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -101,16 +101,16 @@ img {
   width: 100%;
   height: 100%;
   background-color: hsl(277deg, 64%, 61%);
-  opacity: 0.65;
+  opacity: 0.7;
 }
 
 .img-wrapper, img, .overlay {
-  border-radius: 15px 15px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 @media (min-width: 550px) {
   .img-wrapper, img, .overlay {
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 10px 10px 0;
   }
 }
 /*Content Style*/
@@ -145,6 +145,25 @@ img {
   margin-bottom: 1.25rem;
 }
 .content .stats .top {
-  color: hsla(0deg, 0%, 100%, 0.6);
+  color: hsl(0deg, 0%, 100%);
   font-weight: 700;
+}
+.content .stats p {
+  text-transform: uppercase;
+}
+
+@media (min-width: 550px) {
+  .content {
+    width: 55%;
+    border: 1px solid green;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
