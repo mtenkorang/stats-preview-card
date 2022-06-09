@@ -38,6 +38,8 @@ main {
   background-color: hsl(244deg, 38%, 16%);
   border-radius: 15px;
   border: 1px solid #c086e4;
+  -webkit-box-shadow: 0 0 10px #2c295b;
+          box-shadow: 0 0 10px #2c295b;
   width: 90vw;
 }
 main h1, main p {
@@ -142,6 +144,7 @@ img {
           align-items: center;
   margin-bottom: 1.25rem;
 }
-.content .stats span {
+.content .stats .top {
   color: hsla(0deg, 0%, 100%, 0.6);
+  font-weight: 700;
 }
