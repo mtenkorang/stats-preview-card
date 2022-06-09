@@ -7,6 +7,7 @@
 
 /*Basic Styles*/
 body {
+  background-color: hsl(233deg, 47%, 7%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,4 +17,94 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+h1, span {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+/*card Design*/
+main {
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 10px;
+  border: 2px solid maroon;
+  width: 90vw;
+}
+main h1, main p {
+  text-align: center;
+  padding: 0 1rem;
+}
+main h1 {
+  color: white;
+}
+main h1 > span {
+  color: hsl(277deg, 64%, 61%);
+}
+main p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+@media screen and (min-width: 550px) {
+  main {
+    max-height: 28rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+/*Main Ends*/
+.img-wrapper img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*Image*/
+.content {
+  margin: 1rem 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 1rem;
+}
+.content .stats .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.25rem;
+}
+.content .stats span {
+  color: hsla(0deg, 0%, 100%, 0.6);
 }
