@@ -19,10 +19,15 @@
 <body>
     <main>
 
-        <picture class="img-wrapper">
-            <source media="(min-width: 550px)" srcset="images/image-header-desktop.jpg"/>
-            <img src="images/image-header-mobile.jpg" alt="">
-        </picture>
+        <div class="img-wrapper">
+            <img 
+            src="images/image-header-mobile.jpg" 
+            srcset="images/image-header-desktop.jpg 500w"
+            alt="An Image of Employees in an office">
+            <div class="overlay">
+    
+            </div>
+        </div>
 
         <section class="content">
             <h1>
@@ -35,15 +40,17 @@
 
             <div class="stats">
                 <div class="item 01">
-                    <span>10k+</span>
-                    <p>companies</p>
+                    <p>10k+</p>
+                    <p> companies</p>
                 </div>
+
                 <div class=" item 02">
-                    <span>314 </span>
+                    <p>314</p>
                     <p>templates</p>
                 </div>
+
                 <div class="item 03">
-                    <span>12m+</span>
+                    <p>12m+</p>
                     <p>queries</p>
                 </div>
             </div>
