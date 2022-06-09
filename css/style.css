@@ -37,7 +37,7 @@ p {
 main {
   background-color: hsl(244deg, 38%, 16%);
   border-radius: 10px;
-  border: 2px solid maroon;
+  border: 1px solid #c086e4;
   width: 90vw;
 }
 main h1, main p {
@@ -57,6 +57,7 @@ main p {
 @media screen and (min-width: 550px) {
   main {
     max-height: 28rem;
+    max-width: 76vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
