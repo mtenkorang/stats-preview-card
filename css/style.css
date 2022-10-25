@@ -101,13 +101,14 @@ span.word {
             order: 2;
   }
   .content {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     display: grid;
     grid-template-areas: "a a a" "b c d";
+    justify-items: flex-start;
   }
   .info {
     text-align: left;
@@ -116,9 +117,11 @@ span.word {
   .info.a {
     grid-area: a;
   }
-  .info.a h1,
-.info.a p {
+  .info.a h1 {
     max-width: 85%;
+  }
+  .info.a p {
+    max-width: 90%;
   }
   .info.last {
     margin: 0;
