@@ -36,6 +36,7 @@ p.big {
   color: hsl(0deg, 0%, 100%);
   font-size: 1.2rem;
   font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 main {
