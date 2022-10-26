@@ -8,6 +8,10 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: hsl(233deg, 47%, 7%);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
 }
 
 h1,
@@ -28,11 +32,15 @@ p {
   font-size: 0.9rem;
   line-height: 1.5rem;
 }
+p.big {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+}
 
 main {
-  margin: 2.5rem auto;
-  max-width: 21rem;
-  height: 100%;
+  margin: 2.5rem 0;
+  max-width: 21.5rem;
   border-radius: 10px;
   overflow: hidden;
   background-color: hsl(244deg, 38%, 16%);
@@ -52,8 +60,9 @@ div.img-wrapper .overlay {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: hsl(277deg, 64%, 61%);
   opacity: 0.7;
-  background-color: #5b1c82;
+  mix-blend-mode: multiply;
 }
 
 span {
@@ -92,6 +101,7 @@ span.word {
 @media only screen and (min-width: 768px) {
   main {
     max-width: 70%;
+    max-height: 24rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -109,6 +119,7 @@ span.word {
     display: grid;
     grid-template-areas: "a a a" "b c d";
     justify-items: flex-start;
+    row-gap: 10px;
   }
   .info {
     text-align: left;
@@ -117,11 +128,9 @@ span.word {
   .info.a {
     grid-area: a;
   }
-  .info.a h1 {
+  .info.a h1,
+.info.a p {
     max-width: 85%;
-  }
-  .info.a p {
-    max-width: 90%;
   }
   .info.last {
     margin: 0;
