@@ -50,12 +50,17 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg" />
+  <source media="(min-width: 465px)" srcset="img_car.jpg" />
+  <img src="img_girl.jpg" />
+</picture>
 ```
 
 ```css
 .proud-of-this-css {
-  color: papayawhip;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
 }
 ```
 
@@ -64,8 +69,6 @@ const proudOfThisFunc = () => {
   console.log("🎉");
 };
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ## Author
 
